@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
    Scroll Reveal
 =========================== */
 
-const observer = new IntersectionObserver((entries)=>{
+/* const observer = new IntersectionObserver((entries)=>{
 
     entries.forEach(entry=>{
 
@@ -65,7 +65,7 @@ document.querySelectorAll("section,.feature-card,.showcase")
 
     observer.observe(el);
 
-});
+}); */
 
 
 /* ===========================
