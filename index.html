@@ -1,34 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillBizz</title>
+
+    <title>SkillBizz | Hyperlocal Marketplace</title>
 
     <style>
-        body{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
-            max-width:800px;
-            margin:60px auto;
-            padding:20px;
-            line-height:1.7;
-            background:#f7f7f7;
+            background: #f6f8fb;
+            color: #222;
+            line-height: 1.7;
         }
 
-        h1{
-            color:#0A1733;
+        a {
+            text-decoration: none;
         }
 
-        a{
-            color:#2563eb;
-            text-decoration:none;
+        header {
+            background: #0A1733;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .card{
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 5px 20px rgba(0,0,0,.08);
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            opacity: .8;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            background: white;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            color: #0A1733;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .primary {
+            background: #0A1733;
+            color: white;
+        }
+
+        .primary:hover {
+            background: #152b5c;
+        }
+
+        .secondary {
+            border: 2px solid #0A1733;
+            color: #0A1733;
+        }
+
+        .secondary:hover {
+            background: #0A1733;
+            color: white;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .phone {
+            width: 280px;
+            height: 560px;
+            background: #0A1733;
+            border-radius: 35px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            margin: auto;
+            box-shadow: 0 15px 35px rgba(0,0,0,.2);
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #0A1733;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-text {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            color: #666;
+            margin-bottom: 50px;
         }
     </style>
 
@@ -36,26 +155,307 @@
 
 <body>
 
-<div class="card">
+<header>
 
-<h1>SkillBizz</h1>
+    <div class="logo">
+        SkillBizz
+    </div>
 
-<p>
-Welcome to SkillBizz.
-</p>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="privacy.html">Privacy</a>
+    </nav>
 
-<p>
-SkillBizz is a hyperlocal marketplace where users can discover nearby businesses,
-service providers and connect with trusted local professionals.
-</p>
+</header>
 
-<h2>Legal</h2>
+<section class="hero">
 
-<p>
-<a href="privacy.html">Privacy Policy</a>
-</p>
+    <div class="hero-text">
 
-</div>
+        <h1>
+            Discover Local Businesses & Skilled Professionals
+        </h1>
 
+        <p>
+            SkillBizz connects customers with nearby businesses and trusted
+            service providers through one simple platform.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#" class="btn primary">
+                Coming Soon on Play Store
+            </a>
+
+            <a href="privacy.html" class="btn secondary">
+                Privacy Policy
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="phone">
+            SkillBizz App Preview
+        </div>
+
+    </div>
+
+</section>
+
+<section id="features">
+
+    <h2>Why Choose SkillBizz?</h2>
+
+    <p class="section-text">
+        SkillBizz makes it easy to discover trusted local businesses and skilled
+        professionals around you while giving business owners a platform to
+        showcase their work.
+    </p>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>📍 Nearby Discovery</h3>
+            <p>Find businesses and skilled professionals within your preferred location radius.</p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Ratings & Reviews</h3>
+            <p>Read genuine customer reviews before choosing a service provider.</p>
+        </div>
+
+        <div class="card">
+            <h3>📷 Showcase Work</h3>
+            <p>Businesses and professionals can upload photos of their products and completed work.</p>
+        </div>
+
+        <div class="card">
+            <h3>💬 Community Driven</h3>
+            <p>Follow businesses, engage with posts, and discover new local services.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Secure Accounts</h3>
+            <p>Authentication is securely managed using Supabase.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Fast & Simple</h3>
+            <p>A clean mobile experience designed for customers, businesses, and skilled workers.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="how">
+
+    <h2>How SkillBizz Works</h2>
+
+    <p class="section-text">
+        Whether you're looking for a service or promoting your business,
+        SkillBizz makes the process simple.
+    </p>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="number">1</div>
+            <h3>Create an Account</h3>
+            <p>Sign up as a Customer, Business Owner, or Service Provider.</p>
+        </div>
+
+        <div class="step">
+            <div class="number">2</div>
+            <h3>Build Your Profile</h3>
+            <p>Add your details, photos, services, or business information.</p>
+        </div>
+
+        <div class="step">
+            <div class="number">3</div>
+            <h3>Connect Locally</h3>
+            <p>Discover nearby opportunities and connect with your local community.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    color:#0A1733;
+    margin-bottom:12px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.step{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.number{
+    width:60px;
+    height:60px;
+    background:#0A1733;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+</style>
+
+<section id="download">
+
+    <h2>Coming Soon</h2>
+
+    <p class="section-text">
+        SkillBizz is currently under development and will soon be available on the
+        Google Play Store.
+    </p>
+
+    <div style="text-align:center; margin-top:30px;">
+        <a href="#" class="btn primary">
+            🚀 Download on Google Play (Coming Soon)
+        </a>
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <h3>SkillBizz</h3>
+            <p>
+                Connecting customers with trusted local businesses and skilled
+                professionals.
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <p><a href="/">Home</a></p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p><a href="terms.html">Terms & Conditions</a></p>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+
+            <p>Email:</p>
+            <p>support@skillbizz.app</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 SkillBizz. All Rights Reserved.
+    </p>
+
+</footer>
+
+<style>
+
+footer{
+    background:#0A1733;
+    color:white;
+    padding:60px 8% 30px;
+    margin-top:80px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    margin-bottom:40px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+footer a{
+    color:white;
+}
+
+footer hr{
+    opacity:.2;
+    margin:20px 0;
+}
+
+.copyright{
+    text-align:center;
+    opacity:.8;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+}
+
+</style>
 </body>
 </html>
