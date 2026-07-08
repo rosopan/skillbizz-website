@@ -398,17 +398,77 @@ SCREENSHOTS
 DOWNLOAD
 =========================== */
 
+/* ===========================
+DOWNLOAD
+=========================== */
+
 #download{
 
-background:linear-gradient(135deg,#0A1733,#10295d);
-padding:90px;
+margin:80px 8%;
+
+background:linear-gradient(135deg,#0A1733,#12306d);
+
 border-radius:30px;
+
+padding:70px 60px;
+
+color:white;
+
+overflow:hidden;
 
 }
 
-#download h2{
+.download-content{
 
-    color:white;
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+align-items:center;
+
+gap:50px;
+
+}
+
+.download-text h2{
+
+color:white;
+
+font-size:42px;
+
+margin-bottom:20px;
+
+text-align:left;
+
+}
+
+.download-text p{
+
+color:#d6dfff;
+
+font-size:18px;
+
+margin-bottom:35px;
+
+max-width:500px;
+
+}
+
+.download-image{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.download-image img{
+
+width:280px;
+
+border-radius:28px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
 
 }
 
@@ -426,51 +486,99 @@ FOOTER
 
 footer{
 
-    background:#081224;
+background:#081224;
 
-    color:white;
+padding:60px 8% 30px;
 
-    padding:70px 8%;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:40px;
+color:white;
 
 }
 
-footer img{
+.footer-grid{
 
-    width:80px;
+display:grid;
 
-    margin-bottom:15px;
+grid-template-columns:2fr 1fr 1fr;
 
-}
+gap:60px;
 
-footer h4{
-
-    color:white;
-
-    margin-bottom:20px;
+align-items:start;
 
 }
 
-footer a{
+.footer-grid img{
 
-    display:block;
+width:70px;
 
-    margin-bottom:12px;
-
-    color:#ccc;
+margin-bottom:15px;
 
 }
 
-footer p{
+.footer-grid h3{
 
-    color:#ccc;
+color:white;
+
+margin-bottom:15px;
 
 }
+
+.footer-grid h4{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.footer-grid p{
+
+color:#c8d2e5;
+
+line-height:1.8;
+
+}
+
+.footer-grid a{
+
+display:block;
+
+margin-bottom:12px;
+
+color:#c8d2e5;
+
+transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+color:white;
+
+}
+
+footer hr{
+
+margin:40px 0 25px;
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#9eb0d1;
+
+font-size:15px;
+
+}
+
+
 
 /* ===========================
 RESPONSIVE
@@ -940,6 +1048,122 @@ transform:translateY(-20px);
 
 100%{
 transform:translateY(0px);
+}
+
+}
+
+/* ===========================
+Responsive Footer & Download
+=========================== */
+
+@media (max-width:992px){
+
+.download-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.download-text h2{
+
+text-align:center;
+
+font-size:36px;
+
+}
+
+.download-text p{
+
+margin:auto auto 30px;
+
+}
+
+.download-image{
+
+margin-top:20px;
+
+}
+
+.download-image img{
+
+width:240px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+#download{
+
+padding:50px 30px;
+
+margin:60px 5%;
+
+}
+
+.download-text h2{
+
+font-size:30px;
+
+}
+
+.download-text p{
+
+font-size:16px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-grid img{
+
+margin:0 auto 15px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+#download{
+
+padding:40px 20px;
+
+}
+
+.download-text h2{
+
+font-size:26px;
+
+}
+
+.download-image img{
+
+width:180px;
+
+}
+
+footer{
+
+padding:50px 6% 25px;
+
 }
 
 }
